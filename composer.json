@@ -1,0 +1,42 @@
+{
+  "name": "alltel24/rabbit-pub-sub",
+  "description": "rabbit pub/sub",
+  "keywords": [
+    "pub/sub",
+    "rabbit"
+  ],
+  "homepage": "https://alltel24.ru",
+  "type": "project",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Aleksandr Chelnokov",
+      "email": "as@alltel24.ru",
+      "role": "developer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.0",
+    "php-amqplib/php-amqplib": "^3.0",
+    "psr/log": "1.1.4",
+    "psr/http-message": "1.0.1"
+  },
+  "config": {
+    "process-timeout": 60,
+    "fxp-asset": {
+      "enabled": false
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "service\\rabbit\\pubSub\\": "src"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
